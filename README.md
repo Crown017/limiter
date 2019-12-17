@@ -19,7 +19,7 @@
 
 ```
 第二步引入限流器
-```
+```java
 @Service
 public class AccessLimitService {
 
@@ -35,7 +35,7 @@ public class AccessLimitService {
 }
 ```
 第三步使用限流器
-```
+```java
     @GetMapping("/access")
     public String access(){
         //尝试获取令牌
