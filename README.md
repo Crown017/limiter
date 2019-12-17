@@ -52,3 +52,7 @@ public class AccessLimitService {
         }
     }
 ```
+
+
+## SpringAop的方式使用
+基本思路 方法作为Key RateLimiter作为值
