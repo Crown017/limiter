@@ -56,3 +56,9 @@ public class AccessLimitService {
 
 ## SpringAop的方式使用
 基本思路 方法作为Key RateLimiter作为值
+
+
+
+### Ip限流的方法
+map.put（methodKey,Map<String,Counter>） 
+缓存拿到根据方法拿到 方法的所有的Key-value （Ip -> 计数器 ），然后根据IP 获取到Counter , counter++
