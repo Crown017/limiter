@@ -24,7 +24,7 @@
 public class AccessLimitService {
 
     //每秒只发出5个令牌
-    RateLimiter rateLimiter = RateLimiter.create(6.0);
+    RateLimiter rateLimiter = RateLimiter.create(5.0);
     /**
      * 尝试获取令牌
      * @return
