@@ -1,4 +1,4 @@
-package com.songshushan.fusion.limiter;
+package limit;
 
 public class LimiterResult {
     private boolean isPass; //是否通过

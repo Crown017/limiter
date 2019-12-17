@@ -1,4 +1,4 @@
-package com.songshushan.fusion.limiter.base;
+package limit.base;
 
 import java.lang.annotation.Annotation;
 

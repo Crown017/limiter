@@ -1,4 +1,4 @@
-package com.songshushan.fusion.limiter;
+package limit;
 
 public class KeyCount {
 
@@ -20,7 +20,7 @@ public class KeyCount {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("KeyCount{");
+        final StringBuilder sb = new StringBuilder("limit.KeyCount{");
         sb.append("key='").append(key).append('\'');
         sb.append(", count=").append(count);
         sb.append(", mark='").append(mark).append('\'');

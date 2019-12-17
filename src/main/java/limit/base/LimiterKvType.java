@@ -1,4 +1,4 @@
-package com.songshushan.fusion.limiter.base;
+package limit.base;
 
 public enum LimiterKvType {
     STRING,

@@ -1,9 +1,9 @@
-package com.songshushan.fusion.limiter;
+package limit;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.songshushan.fusion.limiter.base.LimiterKV;
-import com.songshushan.fusion.limiter.util.LimiterReturnUtils;
+import limit.base.LimiterKV;
+import limit.util.LimiterReturnUtils;
 
 public abstract class BaseLimiter {
 

@@ -1,7 +1,8 @@
-package com.songshushan.fusion.limiter.util;
+package limit.util;
 
-import com.songshushan.fusion.limiter.base.LimiterKV;
-import com.songshushan.fusion.limiter.base.LimiterKvType;
+
+import limit.base.LimiterKV;
+import limit.base.LimiterKvType;
 
 public class LimiterKvUtils {
 

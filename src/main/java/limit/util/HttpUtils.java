@@ -1,4 +1,4 @@
-package com.songshushan.fusion.limiter.util;
+package limit.util;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;

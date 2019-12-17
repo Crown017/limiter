@@ -1,14 +1,21 @@
-package com.songshushan.fusion.limiter;
+package example;
 
-import com.songshushan.fusion.limiter.adapter.LimiterIpAdapter;
-import com.songshushan.fusion.limiter.adapter.LimiterTotalAdapter;
-import com.songshushan.fusion.limiter.base.*;
-import org.apache.log4j.Logger;
+import limit.BaseLimiter;
+import limit.LimiterResult;
+import limit.adapter.LimiterIpAdapter;
+import limit.adapter.LimiterTotalAdapter;
+import limit.base.Limiter;
+import limit.base.LimiterKV;
+import limit.base.LimiterKVObj;
+import limit.base.LimiterQuickIp;
+import limit.base.LimiterQuickTotal;
+import limit.base.Limiters;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.jboss.logging.Logger;
 import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -25,16 +32,16 @@ public class LimiterAop {
     @Autowired
     private ApplicationContext appContext;
 
-    @Pointcut("@annotation(com.songshushan.fusion.limiter.base.Limiters)")
+    @Pointcut("@annotation(limit.base.Limiters)")
     public void recordLimiters() {}
 
-    @Pointcut("@annotation(com.songshushan.fusion.limiter.base.Limiter)")
+    @Pointcut("@annotation(limit.base.Limiter)")
     public void recordLimiter() {}
 
-    @Pointcut("@annotation(com.songshushan.fusion.limiter.base.LimiterQuickTotal)")
+    @Pointcut("@annotation(limit.base.LimiterQuickTotal)")
     public void recordLimiterQuickTotal() {}
 
-    @Pointcut("@annotation(com.songshushan.fusion.limiter.base.LimiterQuickIp)")
+    @Pointcut("@annotation(limit.base.LimiterQuickIp)")
     public void recordLimiterQuickIp() {}
 
 

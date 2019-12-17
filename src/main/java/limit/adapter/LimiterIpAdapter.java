@@ -1,14 +1,15 @@
-package com.songshushan.fusion.limiter.adapter;
+package limit.adapter;
+
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import com.songshushan.fusion.limiter.BaseLimiter;
-import com.songshushan.fusion.limiter.KeyCount;
-import com.songshushan.fusion.limiter.LimiterResult;
-import com.songshushan.fusion.limiter.base.LimiterKV;
-import com.songshushan.fusion.limiter.util.HttpUtils;
-import com.songshushan.fusion.limiter.util.LimiterKvUtils;
+import limit.BaseLimiter;
+import limit.KeyCount;
+import limit.LimiterResult;
+import limit.base.LimiterKV;
+import limit.util.HttpUtils;
+import limit.util.LimiterKvUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;

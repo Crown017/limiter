@@ -1,10 +1,11 @@
-package com.songshushan.fusion.limiter.adapter;
+package limit.adapter;
 
 
-import com.songshushan.fusion.limiter.BaseLimiter;
-import com.songshushan.fusion.limiter.LimiterResult;
-import com.songshushan.fusion.limiter.base.LimiterKV;
-import com.songshushan.fusion.limiter.util.LimiterKvUtils;
+
+import limit.BaseLimiter;
+import limit.LimiterResult;
+import limit.base.LimiterKV;
+import limit.util.LimiterKvUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
